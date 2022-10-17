@@ -263,14 +263,14 @@ async function uploadToNightScout(measurementData) {
                 });
             if (response.status !== 200)
             {
-                logger.error("Upload to NightScout failed ", response.statusText);
+                logger.error("Upload to NightScout failed_1 ", response.statusText);
             } else
             {
                 logger.info("Upload of " + formattedMeasurements.length + " measurements to Nightscout succeeded");
             }
         } catch (error)
         {
-            logger.error("Upload to NightScout failed ", error);
+            logger.error("Upload to NightScout failed_2 ", error);
         }
     } else {
         logger.info("No new measurements to upload");
